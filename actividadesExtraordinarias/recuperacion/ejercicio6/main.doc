@@ -1,0 +1,30 @@
+Proceso EncontrarElementoMasFrecuente
+    Definir arreglo Como Caracter[]
+    Definir conteo Como Diccionario<Caracter, Entero>
+    Definir elementoMasFrecuente Como Caracter
+    Definir maximoFrecuencia Como Entero
+    
+    Para Cada elemento En arreglo Hacer
+        Si conteo.Contiene(elemento) Entonces
+            conteo[elemento] <- conteo[elemento] + 1
+        Sino
+            conteo[elemento] <- 1
+        FinSi
+        
+        Si conteo[elemento] > maximoFrecuencia Entonces
+            elementoMasFrecuente <- elemento
+            maximoFrecuencia <- conteo[elemento]
+        FinSi
+    FinPara
+    
+    Devolver [elementoMasFrecuente, maximoFrecuencia]
+FinProceso
+
+Proceso Principal
+    Definir palabras Como Caracter[] = ["manzana", "pera", "manzana", "manzana", "naranja", "pera", "manzana"]
+    Definir resultado Como Caracter[]
+    
+    resultado <- EncontrarElementoMasFrecuente(palabras)
+    
+    Escribir "El elemento más frecuente es '", resultado[0], "' y se repite ", resultado[1], " veces."
+FinProceso

@@ -1,0 +1,30 @@
+Proceso EncontrarPalabraMasLarga
+    Definir palabras Como Cadena[5]
+    Definir palabraMasLarga Como Cadena
+    Definir cantidadCaracteresMaxima Como Entero
+    Definir i Como Entero
+    
+    // Solicitar al usuario las cinco palabras
+    Para i <- 1 Hasta 5 Hacer
+        Escribir "Ingrese la palabra ", i, ":"
+        Leer palabras[i]
+    FinPara
+    
+    // Encontrar la palabra con mayor cantidad de caracteres
+    palabraMasLarga <- palabras[1]
+    cantidadCaracteresMaxima <- Longitud(palabras[1])
+    
+    Para i <- 2 Hasta 5 Hacer
+        Si Longitud(palabras[i]) > cantidadCaracteresMaxima Entonces
+            palabraMasLarga <- palabras[i]
+            cantidadCaracteresMaxima <- Longitud(palabras[i])
+        FinSi
+    FinPara
+    
+    // Mostrar la palabra con mayor cantidad de caracteres y la cantidad de caracteres
+    Escribir "La palabra más larga es '", palabraMasLarga, "' con ", cantidadCaracteresMaxima, " caracteres."
+FinProceso
+
+Inicio
+    EncontrarPalabraMasLarga()
+Fin

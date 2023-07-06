@@ -1,0 +1,54 @@
+Proceso VerificarPalindromo
+    Definir cadena, cadenaSinEspacios, cadenaReversa Como Cadena
+    Definir resultado Como Logico
+    
+    Escribir "Ingrese una cadena de caracteres:"
+    Leer cadena
+    
+    cadenaSinEspacios <- ConvertirMinusculas(EliminarEspacios(cadena))
+    cadenaReversa <- InvertirCadena(cadenaSinEspacios)
+    
+    resultado <- cadenaSinEspacios = cadenaReversa
+    
+    Si resultado Entonces
+        Escribir "La cadena """ + cadena + """ es un palíndromo."
+    Sino
+        Escribir "La cadena """ + cadena + """ no es un palíndromo."
+    FinSi
+FinProceso
+
+Funcion EliminarEspacios(cadena: Cadena) Como Cadena
+    Definir cadenaSinEspacios Como Cadena
+    Definir i Como Entero
+    
+    cadenaSinEspacios <- ""
+    
+    Para i <- 1 Hasta Longitud(cadena) Hacer
+        Si Subcadena(cadena, i, 1) <> " " Entonces
+            cadenaSinEspacios <- cadenaSinEspacios + Subcadena(cadena, i, 1)
+        FinSi
+    FinPara
+    
+    Devolver cadenaSinEspacios
+FinFuncion
+
+Funcion ConvertirMinusculas(cadena: Cadena) Como Cadena
+    Devolver Minusculas(cadena)
+FinFuncion
+
+Funcion InvertirCadena(cadena: Cadena) Como Cadena
+    Definir cadenaReversa Como Cadena
+    Definir i Como Entero
+    
+    cadenaReversa <- ""
+    
+    Para i <- Longitud(cadena) Hasta 1 Con Paso -1 Hacer
+        cadenaReversa <- cadenaReversa + Subcadena(cadena, i, 1)
+    FinPara
+    
+    Devolver cadenaReversa
+FinFuncion
+
+Inicio
+    VerificarPalindromo()
+Fin

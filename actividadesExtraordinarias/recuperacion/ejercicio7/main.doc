@@ -1,0 +1,21 @@
+Proceso MultiplicarNumeros
+    Definir arreglo Como Entero[]
+    Definir resultado Como Entero
+    
+    resultado <- 1
+    
+    Para Cada elemento En arreglo Hacer
+        resultado <- resultado * elemento
+    FinPara
+    
+    Devolver resultado
+FinProceso
+
+Proceso Principal
+    Definir numeros Como Entero[] = [2, 4, 6, 8]
+    Definir resultado Como Entero
+    
+    resultado <- MultiplicarNumeros(numeros)
+    
+    Escribir "El resultado de la multiplicación es: ", resultado
+FinProceso

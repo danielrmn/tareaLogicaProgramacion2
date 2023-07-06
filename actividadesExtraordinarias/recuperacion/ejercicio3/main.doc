@@ -1,0 +1,27 @@
+Proceso ImprimirPalabrasMayores
+    Definir palabras Como Cadena[5]
+    Definir numero Como Entero
+    Definir i Como Entero
+    
+    // Solicitar al usuario las cinco palabras
+    Para i <- 1 Hasta 5 Hacer
+        Escribir "Ingrese la palabra ", i, ":"
+        Leer palabras[i]
+    FinPara
+    
+    // Solicitar al usuario el número entero
+    Escribir "Ingrese un número entero:"
+    Leer numero
+    
+    // Imprimir las palabras con una cantidad de caracteres mayor al número ingresado
+    Escribir "Palabras con más de ", numero, " caracteres:"
+    Para i <- 1 Hasta 5 Hacer
+        Si Longitud(palabras[i]) > numero Entonces
+            Escribir palabras[i]
+        FinSi
+    FinPara
+FinProceso
+
+Inicio
+    ImprimirPalabrasMayores()
+Fin

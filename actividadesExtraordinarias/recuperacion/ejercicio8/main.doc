@@ -1,0 +1,26 @@
+Proceso DecimalABinario
+    Definir numero Como Entero
+    Definir binario Como Caracter
+    
+    numero <- ObtenerNumeroAleatorio(1, 5000) // Generar número aleatorio entre 1 y 5000
+    
+    Mientras numero > 0 Hacer
+        binario <- Concatenar(AEntero(numero % 2), binario)
+        numero <- numero / 2
+    FinMientras
+    
+    Escribir "El número ", numero, " en binario es: ", binario
+FinProceso
+
+Proceso ObtenerNumeroAleatorio(Desde, Hasta)
+    Definir aleatorio Como Entero
+    
+    aleatorio <- Aleatorio(Desde, Hasta)
+    
+    Devolver aleatorio
+FinProceso
+
+Proceso Principal
+    DecimalABinario()
+    DecimalABinario()
+FinProceso
