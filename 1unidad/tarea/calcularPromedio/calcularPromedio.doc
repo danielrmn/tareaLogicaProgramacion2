@@ -1,0 +1,22 @@
+Algoritmo CalcularPromedio
+    Definir calcular_promedio como arreglo de enteros
+    Definir numeroIngresado, sum, promedio como enteros
+
+    sum = 0
+
+    Hacer
+        numeroIngresado = LeerEntero("Ingrese un número")
+        calcular_promedio.Agregar(numeroIngresado)
+    Mientras calcular_promedio.Tamaño < 10
+
+    Para i = 0 Hasta calcular_promedio.Tamaño - 1 Con Paso 1 Hacer
+        sum = sum + calcular_promedio[i]
+    FinPara
+
+    promedio = sum / calcular_promedio.Tamaño
+
+    Escribir "array: ", calcular_promedio
+    Escribir "suma de los números ingresados: ", sum
+    Escribir "promedio de los números ingresados: ", promedio
+
+FinAlgoritmo

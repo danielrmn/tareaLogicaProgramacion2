@@ -1,0 +1,26 @@
+Algoritmo adivinaNumero
+	Dimension  arrayRandom[10]
+	Definir numeroRandom, posicion Como Entero
+	Definir encontrado Como Logico
+	
+	Para i <- 1 Hasta 10 Con Paso 1 Hacer
+		arrayRandom[i] <- azar(100+1)
+		Escribir "Arreglo generado:", arrayRandom[i]
+	Fin Para
+	
+	Escribir "Ingrese un número:"
+    Leer numeroIngresado
+	
+	encontrado = Falso
+    posicion = -1
+	
+	Para i <- 1 Hasta 10 Con Paso 1 Hacer
+		Si arrayRandom[i] = numeroIngresado Entonces
+			econtrado = Verdadero
+			posicion = i
+		Fin Si
+	Fin Para
+	
+	Escribir posicion
+	
+FinAlgoritmo

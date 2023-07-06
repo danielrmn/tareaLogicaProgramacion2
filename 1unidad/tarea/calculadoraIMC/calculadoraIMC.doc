@@ -1,0 +1,17 @@
+Algoritmo CalculadoraIMC
+    Definir altura, peso, imc como reales
+
+    altura = LeerReal("Ingrese su altura en pulgadas:")
+    peso = LeerReal("Ingrese su peso en libras:")
+
+    Proceso calculadoraIMC(altura, peso)
+        Definir imc como real
+
+        imc = 703 * peso / (altura * altura)
+        Escribir "Tu IMC es:", imc
+    FinProceso
+
+    // Llamar a la función calculadoraIMC
+    calculadoraIMC(altura, peso)
+
+FinAlgoritmo

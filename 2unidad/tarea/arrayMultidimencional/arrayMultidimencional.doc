@@ -1,0 +1,34 @@
+Algoritmo MatrizTranspuesta
+    Definir matrizOriginal, matrizTranspuesta como matriz de enteros
+    Definir fila como arreglo de enteros
+
+    Para i = 1 Hasta 3 Paso 1
+        Para j = 1 Hasta 3 Paso 1
+            Escribir "Ingrese el número para la posición [", i, ",", j, "]:"
+            Leer matrizOriginal[i][j]
+        Fin Para
+    Fin Para
+
+    Escribir "Matriz original:"
+    Para i = 1 Hasta 3 Paso 1
+        Para j = 1 Hasta 3 Paso 1
+            Escribir matrizOriginal[i][j]
+        Fin Para
+    Fin Para
+
+    Para i = 1 Hasta 3 Paso 1
+        fila = []
+        Para j = 1 Hasta 3 Paso 1
+            fila[j] = matrizOriginal[j][i]
+        Fin Para
+        matrizTranspuesta[i] = fila
+    Fin Para
+
+    Escribir "Matriz transpuesta (rotada):"
+    Para i = 1 Hasta 3 Paso 1
+        Para j = 1 Hasta 3 Paso 1
+            Escribir matrizTranspuesta[i][j]
+        Fin Para
+    Fin Para
+
+FinAlgoritmo

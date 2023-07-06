@@ -1,0 +1,20 @@
+Algoritmo Ackermann
+
+    Funcion ackermann(m: entero, n: entero): entero
+        Si m = 0 Entonces
+            Devolver n + 1
+        Sino
+            Si m > 0 Y n = 0 Entonces
+                Devolver ackermann(m - 1, 1)
+            Sino
+                Devolver ackermann(m - 1, ackermann(m, n - 1))
+            FinSi
+        FinSi
+    FinFuncion
+
+    Definir resultado como entero
+
+    resultado = ackermann(3, 4)
+    Escribir resultado
+
+FinAlgoritmo

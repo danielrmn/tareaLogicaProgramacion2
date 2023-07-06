@@ -1,0 +1,30 @@
+Algoritmo TrianguloPascal
+
+    Procedimiento imprimirTrianguloPascal(numFilas: entero)
+        Definir triangulo como matriz de enteros
+        Dimension triangulo[numFilas][numFilas]
+
+        Para i <- 0 Hasta numFilas-1 Hacer
+            Para j <- 0 Hasta i Hacer
+                Si j = 0 O j = i Entonces
+                    triangulo[i][j] <- 1
+                Sino
+                    triangulo[i][j] <- triangulo[i-1][j-1] + triangulo[i-1][j]
+                FinSi
+            FinPara
+        FinPara
+
+        Para i <- 0 Hasta numFilas-1 Hacer
+            Para j <- 0 Hasta i Hacer
+                Escribir triangulo[i][j] + " "
+            FinPara
+            Escribir ""
+        FinPara
+    FinProcedimiento
+
+    Definir numFilas como entero
+
+    numFilas <- Leer("Ingrese el número de filas: ")
+    imprimirTrianguloPascal(numFilas)
+
+FinAlgoritmo

@@ -1,0 +1,18 @@
+Algoritmo FibonacciRecursivo
+    Funcion obtenerFibonacciRecursivo(n: entero): entero
+        Si n <= 1 Entonces
+            Devolver n
+        Sino
+            Devolver obtenerFibonacciRecursivo(n - 1) + obtenerFibonacciRecursivo(n - 2)
+        FinSi
+    FinFuncion
+
+    Definir termino, resultado como enteros
+
+    termino = LeerEntero("Ingresa el término n")
+
+    resultado = obtenerFibonacciRecursivo(termino)
+
+    Escribir "El término", termino, "de la sucesión de Fibonacci es:", resultado
+
+FinAlgoritmo

@@ -1,0 +1,15 @@
+Algoritmo CalcularDescuento
+    Definir precio, descuento, descuentoTotal, precioConDescuento como reales
+
+    Proceso calcular_descuento(precio, descuento)
+        descuento = descuento / 100
+        descuentoTotal = precio * descuento
+        precioConDescuento = precio - descuentoTotal
+        
+        Escribir "precio original: " + precio + ", descuento agregado: " + descuento*100 + "%" + ", precio con descuento incluido: " + precioConDescuento
+    FinProceso
+
+    // Llamar a la función calcular_descuento
+    calcular_descuento(633, 8)
+
+FinAlgoritmo

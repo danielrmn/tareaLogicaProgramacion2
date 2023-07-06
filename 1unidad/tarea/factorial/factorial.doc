@@ -1,0 +1,26 @@
+Algoritmo Factorial
+    Definir num, resultado, fact como enteros
+
+    num = LeerEntero("Escribe el número factorial")
+
+    Funcion factorial(num)
+        Definir i como entero
+        fact = 1
+
+        Si num < 0 Entonces
+            Devolver -1
+        Sino Si num = 0 Entonces
+            Devolver 1
+        Sino
+            Para i = 1 Hasta num Con Paso 1 Hacer
+                fact = fact * i
+            FinPara
+            Escribir fact
+        FinSi
+    FinFuncion
+
+    // Llamar a la función factorial
+    resultado = factorial(num)
+    Escribir resultado
+
+FinAlgoritmo

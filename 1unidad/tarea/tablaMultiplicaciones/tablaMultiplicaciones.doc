@@ -1,0 +1,18 @@
+Algoritmo TablaMultiplicar
+    Definir numeroEntero, results como enteros
+
+    numeroEntero = LeerEntero("Ingresa un número entero")
+
+    SubProceso imprimir_tabla_multiplicar(numeroEntero)
+        Definir i como entero
+
+        Para i = 1 Hasta 10 Con Paso 1 Hacer
+            results = numeroEntero * i
+            Escribir numeroEntero, " x ", i, " = ", results
+        FinPara
+    FinSubProceso
+
+    // Llamar al subproceso imprimir_tabla_multiplicar
+    imprimir_tabla_multiplicar(numeroEntero)
+
+FinAlgoritmo

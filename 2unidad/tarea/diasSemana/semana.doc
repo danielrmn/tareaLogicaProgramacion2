@@ -1,0 +1,34 @@
+Algoritmo diaSemana
+	Escribir 'Tarea 1 Unidad 2'
+	Escribir "0 -> domingo, 1 -> lunes, 2 -> martes, 3 -> miercoles, 4 -> jueves, 5 -> viernes, 6 -> sabado"
+	Escribir "selecciona el dia"
+	leer dia
+	Dimension  semana[7]
+	semana[1] <- 'lunes'
+	semana[2] <- 'martes'
+	semana[3] <- 'miercoles'
+	semana[4] <- 'jueves'
+	semana[5] <- 'viernes'
+	semana[6] <- 'sabado'
+	semana[7] <- 'domingo'
+	
+	Segun dia Hacer
+		1:
+			Escribir semana[1]
+		2:
+			Escribir semana[2]
+		3:
+			Escribir semana[3]
+		4:
+			Escribir semana[4]
+		5:
+			Escribir semana[5]
+		6:
+			Escribir semana[6]
+		7:
+			Escribir semana[7]
+		De Otro Modo:
+			Escribir "valor incorrecto"
+	Fin Segun
+	
+FinAlgoritmo

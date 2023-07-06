@@ -1,0 +1,23 @@
+Algoritmo Potencia
+    Definir base, exponente, resultado como enteros
+
+    base = LeerEntero("Escribe la base")
+    exponente = LeerEntero("Escribe el exponente")
+
+    Funcion potencia(base, exponente)
+        Definir resultado como entero
+
+        Si exponente = 0 Entonces
+            Devolver 1
+        Sino
+            resultado = Elevar(base, exponente)
+            Escribir resultado
+            Devolver resultado
+        FinSi
+    FinFuncion
+
+    // Llamar a la función potencia
+    resultado = potencia(base, exponente)
+    Escribir resultado
+
+FinAlgoritmo

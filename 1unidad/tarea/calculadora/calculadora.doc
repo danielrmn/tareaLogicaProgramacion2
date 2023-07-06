@@ -1,0 +1,66 @@
+Algoritmo CalculadoraBasica
+    // Función para mostrar el menú y solicitar una opción al usuario
+    Funcion mostrarMenu() Devuelve entero
+        Escribir "Calculadora Básica"
+        Escribir "1. Sumar"
+        Escribir "2. Restar"
+        Escribir "3. Multiplicar"
+        Escribir "4. Dividir"
+        Escribir "0. Salir"
+        opcion = LeerEntero("Ingrese una opción:")
+        Devolver opcion
+    FinFuncion
+
+    // Función para solicitar dos números al usuario
+    Funcion solicitarNumeros() Devuelve arreglo de reales
+        numero1 = LeerReal("Ingrese el primer número:")
+        numero2 = LeerReal("Ingrese el segundo número:")
+        Devolver [numero1, numero2]
+    FinFuncion
+
+    // Funciones para realizar las operaciones matemáticas
+    Funcion sumar(a, b) Devuelve real
+        Devolver a + b
+    FinFuncion
+
+    Funcion restar(a, b) Devuelve real
+        Devolver a - b
+    FinFuncion
+
+    Funcion multiplicar(a, b) Devuelve real
+        Devolver a * b
+    FinFuncion
+
+    Funcion dividir(a, b) Devuelve real
+        Devolver a / b
+    FinFuncion
+
+    // Programa principal
+    opcion = mostrarMenu()
+
+    Mientras opcion <> 0 Hacer
+        numeros = solicitarNumeros()
+        resultado = 0.0
+
+        Segun opcion Hacer
+            1:
+                resultado = sumar(numeros[0], numeros[1])
+                Escribir "El resultado de la suma es:", resultado
+            2:
+                resultado = restar(numeros[0], numeros[1])
+                Escribir "El resultado de la resta es:", resultado
+            3:
+                resultado = multiplicar(numeros[0], numeros[1])
+                Escribir "El resultado de la multiplicación es:", resultado
+            4:
+                resultado = dividir(numeros[0], numeros[1])
+                Escribir "El resultado de la división es:", resultado
+            De Otro Modo:
+                Escribir "Opción inválida. Por favor, ingrese una opción válida."
+        FinSegun
+
+        opcion = mostrarMenu()
+    FinMientras
+
+    Escribir "¡Hasta luego!"
+FinAlgoritmo

@@ -1,0 +1,36 @@
+Algoritmo SumaArrays
+    Definir arreglo1, arreglo2, arregloSuma como arreglos de enteros de tamaño 10
+    Definir i como entero
+    
+    // Llenar arreglo1 con números aleatorios entre 1 y 100
+    Para i = 1 Hasta 10 Paso 1
+        arreglo1[i] = Aleatorio(1, 100)
+    Fin Para
+    
+    // Llenar arreglo2 con números aleatorios entre 1 y 100
+    Para i = 1 Hasta 10 Paso 1
+        arreglo2[i] = Aleatorio(1, 100)
+    Fin Para
+    
+    // Calcular la suma de los dos arreglos y guardarla en arregloSuma
+    Para i = 1 Hasta 10 Paso 1
+        arregloSuma[i] = arreglo1[i] + arreglo2[i]
+    Fin Para
+    
+    // Mostrar los tres arreglos
+    Escribir "Arreglo 1:"
+    Para i = 1 Hasta 10 Paso 1
+        Escribir arreglo1[i]
+    Fin Para
+    
+    Escribir "Arreglo 2:"
+    Para i = 1 Hasta 10 Paso 1
+        Escribir arreglo2[i]
+    Fin Para
+    
+    Escribir "Arreglo Suma:"
+    Para i = 1 Hasta 10 Paso 1
+        Escribir arregloSuma[i]
+    Fin Para
+    
+FinAlgoritmo
